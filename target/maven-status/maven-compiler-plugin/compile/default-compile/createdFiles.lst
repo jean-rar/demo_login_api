@@ -1,0 +1,16 @@
+com/login/api/registration/token/ConfirmationTokenService.class
+com/login/api/ApiApplication.class
+com/login/api/registration/EmailValidator.class
+com/login/api/appuser/AppUser.class
+com/login/api/email/EmailService.class
+com/login/api/registration/token/ConfirmationTokenRepository.class
+com/login/api/security/PasswordEncode.class
+com/login/api/email/EmailSender.class
+com/login/api/registration/RegistrationRequest.class
+com/login/api/registration/token/ConfirmationToken.class
+com/login/api/registration/RegistrationController.class
+com/login/api/security/config/WebSecurityConfig.class
+com/login/api/registration/RegistrationService.class
+com/login/api/appuser/AppUserRepository.class
+com/login/api/appuser/AppUserService.class
+com/login/api/appuser/AppUserRole.class

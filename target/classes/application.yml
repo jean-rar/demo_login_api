@@ -1,0 +1,57 @@
+
+# Spring Boot configuration
+spring:
+  server:
+    error:
+      include-message: always
+      include-biding-errors: always
+    port: 8080 #set your port
+  profiles:
+    active: development
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ichef
+    username: userdev
+    password: 9905
+  # JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # When you launch the application for the first time - switch "none" at "create"
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+  ## Logger configuration
+  #logging:
+  #  pattern:
+  #    console: "%d %-5level %logger : %msg%n"
+  #  level:
+  #    org.springframework: info
+  #    org.hibernate: debug
+  # Server configuration
+  # Security configuration
+#  security:
+#    user:
+#      name: user
+#      password: user
+
